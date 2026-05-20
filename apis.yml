@@ -1,0 +1,6 @@
+
+common:
+  - type: GitHubOrganization
+    url: https://github.com/WorldKinect
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/world-kinect
