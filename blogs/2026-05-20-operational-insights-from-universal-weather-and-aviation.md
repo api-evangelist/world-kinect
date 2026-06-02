@@ -1,0 +1,8 @@
+---
+title: Operational Insights from Universal Weather and Aviation
+url: https://www.world-kinect.com/news-insights/aviation/clone-operational-insights-universal-weather-and-aviation
+date: '2026-05-20'
+author: sgrecco
+feed_url: https://world-kinect.com/rss.xml
+---
+Operational Insights from Universal Weather and Aviation sgrecco Wed, 05/20/2026 - 07:15 Aviation May 20, 2026 1 minute Universal Weather and Aviation is now part of World Fuel, combining trusted trip support expertise with World Fuel’s global aviation services. As part of this transition, all Trip Support Updates can now be found on the Universal Trip Support blog. Learn more. Universal Weather & Aviation Visit the Universal Trip Support blog for more on Universal Trip Support’s international solutions. Mobile description As the maritime industry faces mounting pressure to decarbonize, regulatory frameworks like FuelEU Maritime and the EU ETS are accelerating the shift toward cleaner fuels. Biofuels derived from waste and residue feedstocks are emerging as a practical, scalable solution. World Fuel is at the forefront, delivering certified, high-quality marine biofuels to support this transition. Featured blog 1 Exclude from the API Off Weight 1 Banner image Expiration date Sun, 10/22/2028 - 12:00 Last updated Wed, 05/21/2025 - 12:00 Asia-Pacific Universal Weather and Aviation is now part of World Fuel, combining trusted trip support expertise with World Fuel’s global aviation services. Universal Trip Support’s blog reflects that depth of knowledge, offering practical insight on international operations and planning considerations faced by business and general aviation operators. Blog Teaser Image
