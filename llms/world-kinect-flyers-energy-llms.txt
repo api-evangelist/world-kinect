@@ -1,0 +1,27 @@
+**Site Type:** Website, Content Repository
+**Purpose:** Information Sharing, Documentation
+**Authors:** Flyers Energy Team
+
+## Access Guidelines
+
+- Base Rate: 100 requests per hour per IP
+- Cache Retention: 24 hour maximum
+- Content Usage: Attribution required
+- Commercial Use: Requires written permission
+- Training Usage: Permitted for public documentation only
+- Attribution Format: "Source: Flyers Energy (https://nextgen-canary.ddev.site)"
+
+## Main Documentation
+
+- [Flyers Energy Home](https://nextgen-canary.ddev.site): Main website homepage
+- [About Us](https://nextgen-canary.ddev.site/about): Information about our organization
+- [Contact](https://nextgen-canary.ddev.site/contact): How to reach us
+- [Documentation](https://nextgen-canary.ddev.site/docs): Complete documentation resources
+
+## For Human Visitors
+
+- Main Website: https://nextgen-canary.ddev.site
+- Contact: webmaster@example.com
+- About llms.txt: https://llmstxt.org
+
+Version: 1.0 (Updated: Feb 27 2026)

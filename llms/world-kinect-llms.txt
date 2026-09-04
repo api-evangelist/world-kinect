@@ -1,0 +1,58 @@
+# World Kinect
+
+> World Kinect Corporation (NYSE: WKC), formerly World Fuel Services, is a Fortune 500 energy,
+> commodities and services company headquartered in Doral, Florida. It supplies and manages
+> aviation, marine and land fuel, lubricants, natural gas, power, water and carbon-management
+> services in more than 200 countries.
+
+This file is maintained by API Evangelist as an independent, third-party profile of World Kinect's
+publicly reachable API surface. It is not published by World Kinect.
+
+## What is machine-readable today
+
+World Kinect publishes **no public API contract**. As of 2026-09-04 there is no developer portal,
+no API reference, and no OpenAPI, AsyncAPI, GraphQL SDL, WSDL, Protobuf, MCP server or A2A agent
+card on any host this profile knows — world-kinect.com, wfscorp.com and the myWorld portal hosts,
+coltinternational.com, logintokinect.com, flyersenergy.com or quickfuel.com. `/llms.txt`,
+`/openapi.json`, `/swagger.json` and every `/.well-known/` path either 404 or return an
+application shell.
+
+An API does exist. World Fuel's fuel-price and AVCARD surface is consumed by third-party
+flight-operations platforms (Leon Software, Schedaero FuelFinder, Satcom Direct SD Pro), and the
+myWorld and World Kinect Online portals are API-backed single-page applications. All of it is
+reachable only under an existing customer agreement, through the portal-access request form.
+
+## Company
+
+- [World Kinect](https://www.world-kinect.com): Corporate site
+- [About World Kinect](https://www.world-kinect.com/about-us): Company information and leadership
+- [Contact](https://www.world-kinect.com/about-us/contact-world-kinect): Contact routes by business unit
+- [Careers](https://www.world-kinect.com/careers): Open roles, including information technology
+- [News and Insights](https://www.world-kinect.com/news-insights): Company blog and market commentary
+- [News RSS](https://www.world-kinect.com/rss.xml): Machine-readable feed of the above
+
+## Customer portals (authenticated — no public documentation)
+
+- [Customer portals directory](https://www.world-kinect.com/fuel-lubricants/world-kinect-customer-portals): Index of every login
+- [Portal access request](https://www.world-kinect.com/about-us/contact-us/portal-access-form): How access is granted
+- myWorld Aviation: https://myworld.air.wfscorp.com
+- myWorld Land (North America): https://myworld.land.na.wfscorp.com
+- myWorld Marine: https://myworld.marine.wfscorp.com
+- myWorld Carrier: https://carrier.land.wfscorp.com
+- World Kinect Online (energy services): https://logintokinect.com
+- Flyers Energy Vantage: https://myportal.flyersenergy.com
+- Quick Fuel Advantage: https://myportal.quickfuel.com
+
+## Legal
+
+- [Website terms and conditions](https://www.world-kinect.com/website-terms-and-conditions)
+- [General terms and conditions](https://www.world-kinect.com/general-terms-and-conditions)
+- [Privacy center](https://www.world-kinect.com/your-privacy-center)
+- [Cookies policy](https://www.world-kinect.com/cookies-policy)
+
+## This profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/world-kinect/refs/heads/main/apis.yml)
+- Corrections, re-scores and removal are free: info@apievangelist.com
+
+Generated: 2026-09-04 · method: generated · source: apis.yml + this repository's probed artifacts

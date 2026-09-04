@@ -1,0 +1,65 @@
+generated: '2026-09-04'
+method: searched
+source: https://www.world-kinect.com/ and the hosts listed in well-known/world-kinect-well-known.yml
+name: World Kinect — standards conformance
+note: >-
+  An honest negative record. World Kinect publishes no API contract, so there is no spec in which a
+  standard could be declared and no conformance claim to verify. Nothing below is asserted as
+  conforming. The domain-standard signature check (0.12.0) also came back empty: World Kinect's
+  markets do carry real interchange standards — IATA XML / IFRS for aviation fuel uplift, EDIFACT
+  and X12 for bulk fuel and logistics, ISO 20022 for settlement, and the energy-sector data models
+  used in utility and carbon reporting — but none of them is declared or evidenced on any public
+  World Kinect surface, so no domain-standard conformance is recorded. Reward-only: a standard the
+  provider never claimed is not a penalty, and inventing one to fill the slot is out of bounds.
+surfaces_probed:
+  - https://www.world-kinect.com
+  - https://myworld.air.wfscorp.com
+  - https://myworld.land.na.wfscorp.com
+  - https://myworld.marine.wfscorp.com
+  - https://carrier.land.wfscorp.com
+  - https://logintokinect.com
+  - https://www.coltinternational.com
+  - https://www.flyersenergy.com
+  - https://www.quickfuel.com
+conformance:
+  - id: openapi
+    conforms: false
+    evidence: >-
+      No OpenAPI or Swagger document on any host. /openapi.json, /swagger.json and /api-docs 404 on
+      world-kinect.com and coltinternational.com, and return the Angular SPA shell (HTTP 200,
+      text/html) on every *.wfscorp.com portal host.
+  - id: oauth2
+    conforms: false
+    evidence: >-
+      logintokinect.com is an Auth0 custom login domain, so an OAuth 2.0 / OIDC implementation
+      demonstrably backs World Kinect Online — but /.well-known/openid-configuration and
+      /.well-known/oauth-authorization-server both answer HTTP 400 there, and no authorization
+      server metadata, scope reference or token endpoint is published for third-party use.
+  - id: oidc
+    conforms: false
+    evidence: >-
+      No /.well-known/openid-configuration served on any of the eleven hosts probed. See
+      well-known/world-kinect-well-known.yml.
+  - id: rfc9457
+    conforms: false
+    evidence: No error catalog, problem+json envelope or error reference is published.
+  - id: rfc9116
+    conforms: false
+    evidence: >-
+      No /.well-known/security.txt on any host; probe-security-programs.py returned vdp=none
+      trust=none — no bug bounty, disclosure page or trust center found.
+  - id: llmstxt
+    conforms: false
+    evidence: >-
+      world-kinect.com/llms.txt is 404. Two World Kinect brand sites — flyersenergy.com and
+      quickfuel.com — do serve a text/plain /llms.txt (HTTP 200), but it is an unedited scaffold
+      that shipped to production: every link points at https://nextgen-canary.ddev.site, the
+      contact is webmaster@example.com, and both sites serve the byte-identical Flyers Energy
+      template. Saved verbatim at llms/world-kinect-flyers-energy-llms.txt as evidence; not counted
+      as a conforming llms.txt because it describes no World Kinect surface.
+  - id: domain-standard
+    conforms: false
+    evidence: >-
+      No SCIM URN, OData $metadata, ISO 20022 message type, EDIFACT/X12 shape, OpenRTB endpoint or
+      any other domain-standard signature appears on a public World Kinect surface, because no
+      contract is published.

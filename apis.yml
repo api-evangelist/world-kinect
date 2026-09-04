@@ -1,3 +1,33 @@
+name: World Kinect
+description: >-
+  World Kinect Corporation (NYSE: WKC), formerly World Fuel Services, is a Fortune 500 energy,
+  commodities and services company headquartered in Doral, Florida. It supplies and manages
+  aviation, marine and land fuel, lubricants, natural gas, power, water and carbon-management
+  services for airlines, business aviation operators, shipping lines, commercial fleets, fuel
+  retailers and industrial customers in more than 200 countries. Its digital surface is a family
+  of authenticated customer portals — myWorld for aviation, land, marine and carbon management,
+  World Kinect Online for energy services, and the Flyers Energy and Quick Fuel Vantage/Advantage
+  portals — plus a fuel-price and AVCARD integration that reaches operators through third-party
+  flight-operations platforms. World Kinect publishes no public developer portal, API reference
+  or machine-readable API contract.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/world-kinect.png
+url: https://raw.githubusercontent.com/api-evangelist/world-kinect/refs/heads/main/apis.yml
+created: '2026-03-21'
+modified: '2026-09-04'
+specificationVersion: '0.23'
+type: Contract
+position: Consuming
+access: 3rd-Party
+tags:
+  - Fortune 500
+  - Energy
+  - Fuel
+  - Aviation
+  - Marine
+  - Transportation
+  - Sustainability
+  - Commodities
+  - Logistics
 deliveryModel:
   model: unknown
   open_source: false
@@ -9,7 +39,6 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
-specificationVersion: '0.23'
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -21,10 +50,66 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/world-kinect.png
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com
+    organizationName: API Evangelist
+    url: https://apievangelist.com
+apis: []
 
 common:
-  - type: GitHubOrganization
-    url: https://github.com/WorldKinect
+  - type: DomainSecurity
+    url: security/world-kinect-domain-security.yml
+  - type: Website
+    url: https://www.world-kinect.com
+  - type: About
+    url: https://www.world-kinect.com/about-us
+  - type: Support
+    url: https://www.world-kinect.com/about-us/contact-world-kinect
+  - type: Login
+    url: https://www.world-kinect.com/fuel-lubricants/world-kinect-customer-portals
+  - type: Blog
+    url: https://www.world-kinect.com/news-insights
+  - type: BlogRSS
+    url: https://www.world-kinect.com/rss.xml
+  - type: TermsOfService
+    url: https://www.world-kinect.com/website-terms-and-conditions
+  - type: PrivacyPolicy
+    url: https://www.world-kinect.com/your-privacy-center
+  - type: Careers
+    url: https://www.world-kinect.com/careers
   - type: LinkedIn
     url: https://www.linkedin.com/company/world-kinect
+  - type: LLMsTxt
+    url: llms/world-kinect-llms.txt
+  - type: Plans
+    url: plans/world-kinect-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/world-kinect-rate-limits.yml
+  - type: Conformance
+    url: conformance/world-kinect-conformance.yml
+
+x-enrichment:
+  date: '2026-09-04'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v3
+
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: >-
+    World Kinect's fuel-price and AVCARD API is real and reaches operators through third-party
+    flight-operations platforms, but it has no public reference — the only route in is the
+    Portal Access request form, and every myWorld portal host answers HTTP 200 with an Angular
+    SPA shell for /api-docs, /openapi.json and every /.well-known/ path.
+  evidence:
+    - url: https://www.world-kinect.com/about-us/contact-us/portal-access-form
+      status: 200
+    - url: https://myworld.air.wfscorp.com/api-docs
+      status: 200
+    - url: https://www.world-kinect.com/llms.txt
+      status: 404
+    - url: https://www.world-kinect.com/sitemap.xml
+      status: 200
+  checked: '2026-09-04'

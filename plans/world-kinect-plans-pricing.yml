@@ -1,0 +1,28 @@
+generated: '2026-09-04'
+method: searched
+source: https://www.world-kinect.com/
+name: World Kinect — plans and pricing
+plan_count: 0
+note: >-
+  World Kinect publishes no plans, tiers, list prices or self-serve pricing of any kind. Every
+  commercial surface is a negotiated B2B supply or services agreement — fuel, lubricants, natural
+  gas, power, water and carbon-management contracts priced per customer, per market and per
+  delivery point. The 394-URL sitemap at https://www.world-kinect.com/sitemap.xml carries no
+  pricing page, and the only commercial call to action is a contact or credit-application form.
+  There is likewise no API pricing, because there is no public API product: the fuel-price and
+  AVCARD integration reaches operators through their own flight-operations platform under an
+  existing World Fuel customer agreement.
+pricing_model: contract-negotiated
+self_serve: false
+public_price_list: false
+evidence:
+  - url: https://www.world-kinect.com/sitemap.xml
+    status: 200
+    finding: 394 URLs, no /pricing, /plans or /rate-card page
+  - url: https://www.world-kinect.com/about-us/contact-us/portal-access-form
+    status: 200
+    finding: Portal access is requested through a form, not purchased
+  - url: https://www.world-kinect.com/fuel-lubricants/world-kinect-customer-portals
+    status: 200
+    finding: Every digital surface listed is a customer login, none carries a price
+plans: []

@@ -1,0 +1,169 @@
+generated: '2026-09-04'
+method: probed
+source: live probes of /.well-known/{security.txt,openid-configuration,oauth-authorization-server,api-catalog,ai-plugin.json}
+  on every host this record knows
+note: No host served a real /.well-known document. The world-kinect.com, coltinternational.com, flyersenergy.com
+  and quickfuel.com origins 404 every path. The myWorld portal hosts (*.wfscorp.com) are Angular single-page
+  apps whose catch-all answers HTTP 200 with the same HTML shell for every /.well-known/* path — a false
+  positive, recorded here as a miss. logintokinect.com is an Auth0 custom login domain that answers 400
+  on every path outside its authorize flow. No WellKnown or SecurityTxt pointer is emitted, because nothing
+  was served.
+documents_found: 0
+hosts:
+- host: www.world-kinect.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: world-kinect.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: myworld.wfscorp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/api-catalog
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+- host: myworld.air.wfscorp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/api-catalog
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+- host: myworld.land.na.wfscorp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/api-catalog
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+- host: myworld.marine.wfscorp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/api-catalog
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+- host: carrier.land.wfscorp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/api-catalog
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: 200 returned an HTML/SPA shell, not a document — recorded as a miss
+- host: logintokinect.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 400
+  - path: /.well-known/openid-configuration
+    status: 400
+  - path: /.well-known/oauth-authorization-server
+    status: 400
+  - path: /.well-known/api-catalog
+    status: 400
+  - path: /.well-known/ai-plugin.json
+    status: 400
+- host: www.coltinternational.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: www.flyersenergy.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: www.quickfuel.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

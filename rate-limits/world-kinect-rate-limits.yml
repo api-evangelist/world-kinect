@@ -1,0 +1,28 @@
+generated: '2026-09-04'
+method: searched
+source: https://www.world-kinect.com/
+name: World Kinect — rate limits
+limit_count: 0
+note: >-
+  World Kinect documents no API rate limits, because it publishes no API reference. There is no
+  developer portal, no API documentation page, and no machine-readable contract on any host this
+  record knows, so there is no published request quota, window, burst allowance or exhaustion
+  status code to record. No rate-limit response headers could be observed either: every callable
+  surface (the myWorld portals, World Kinect Online) is behind an authenticated login, and an
+  unauthenticated request never reaches an API tier.
+headers: []
+limits: []
+evidence:
+  - url: https://www.world-kinect.com/llms.txt
+    status: 404
+  - url: https://myworld.air.wfscorp.com/api-docs
+    status: 200
+    finding: HTTP 200 but the body is the Angular SPA shell, not an API reference
+  - url: https://www.world-kinect.com/sitemap.xml
+    status: 200
+    finding: no developer, API or documentation page among 394 URLs
+observed_headers_note: >-
+  Two brand sites publish an llms.txt that states an access guideline of "Base Rate: 100 requests
+  per hour per IP" — but that document is an unedited template that leaked to production (it names
+  a DDEV development host and webmaster@example.com), it governs website crawling rather than an
+  API, and it is not treated here as a published API rate limit.
