@@ -1,0 +1,21 @@
+{
+  "repo": "world-kinect",
+  "feeds": [
+    {
+      "source": "https://www.world-kinect.com/fuel-lubricants/world-kinect-customer-portals",
+      "feed_url": "https://www.world-kinect.com/fuel-lubricants/world-kinect-customer-portals",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.world-kinect.com/news-insights",
+      "feed_url": "https://www.world-kinect.com/news-insights",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-06T19:17:18Z"
+}
